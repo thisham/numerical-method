@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PNL - Metode Tabel</title>
+</head>
+<body>
+	<h1>Metode Tabel</h1>
+	<h3>Persamaan : x^2 - exp(x) + 2</h3>
+
+	<table border="0" cellpadding="5px">
+		<thead>
+			<tr>
+				<th>Parameter</th>
+				<th>Nilai</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><label for="va">Nilai Awal</label></td>
+				<td><input type="number" name="va" step="0.0000001" id="va"></td>
+			</tr>
+			<tr>
+				<td><label for="va">Nilai Akhir</label></td>
+				<td><input type="number" name="vb" step="0.0000001" id="vb"></td>
+			</tr>
+			<tr>
+				<td><label for="va">Ketelitian</label></td>
+				<td><input type="number" name="vt" step="0.0000001" id="vt"></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<center>
+						<button type="submit" id="calc">Hitung</button>
+					</center>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<br>
+	<div id="report"></div>
+	<br>
+	<div>
+		<h3>Hasil</h3>
+		<table border="1" cellpadding="10px">
+			<thead>
+				<tr>
+					<th>Iterasi</th>
+					<th>x</th>
+					<th>f(x)</th>
+					<th>Ket.</th>
+				</tr>
+			</thead>
+			<tbody id="result">
+				<tr>
+					<td colspan="4">
+						<center>Tidak ada hasil.</center>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<script src="core.js"></script>
+	<script src="logic.js"></script>
+</body>
+</html>
